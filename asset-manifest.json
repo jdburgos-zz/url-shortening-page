@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/url-shortening-page/static/css/main.766e7a0d.chunk.css",
+    "main.js": "/url-shortening-page/static/js/main.1b85e6cc.chunk.js",
+    "main.js.map": "/url-shortening-page/static/js/main.1b85e6cc.chunk.js.map",
+    "runtime-main.js": "/url-shortening-page/static/js/runtime-main.419f01e6.js",
+    "runtime-main.js.map": "/url-shortening-page/static/js/runtime-main.419f01e6.js.map",
+    "static/js/2.e86ad5b4.chunk.js": "/url-shortening-page/static/js/2.e86ad5b4.chunk.js",
+    "static/js/2.e86ad5b4.chunk.js.map": "/url-shortening-page/static/js/2.e86ad5b4.chunk.js.map",
+    "static/js/3.622b7159.chunk.js": "/url-shortening-page/static/js/3.622b7159.chunk.js",
+    "static/js/3.622b7159.chunk.js.map": "/url-shortening-page/static/js/3.622b7159.chunk.js.map",
+    "index.html": "/url-shortening-page/index.html",
+    "static/css/main.766e7a0d.chunk.css.map": "/url-shortening-page/static/css/main.766e7a0d.chunk.css.map",
+    "static/js/2.e86ad5b4.chunk.js.LICENSE.txt": "/url-shortening-page/static/js/2.e86ad5b4.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/url-shortening-page/static/media/logo.6ce24c58.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.419f01e6.js",
+    "static/js/2.e86ad5b4.chunk.js",
+    "static/css/main.766e7a0d.chunk.css",
+    "static/js/main.1b85e6cc.chunk.js"
+  ]
+}
