@@ -1,5 +1,3 @@
 build/*
 src/styles/generic/_normalize.scss
 .crcf/
-package-lock.json
-package.json

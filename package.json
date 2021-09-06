@@ -2,6 +2,7 @@
   "name": "url-shortening-page",
   "version": "0.1.0",
   "private": true,
+  "homepage": "/url-shortening-page",
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.7",
@@ -41,6 +42,7 @@
   "devDependencies": {
     "@commitlint/cli": "^13.1.0",
     "@commitlint/config-conventional": "^13.1.0",
+    "create-react-component-folder": "^0.3.7",
     "eslint": "^7.32.0",
     "eslint-config-airbnb": "^18.2.1",
     "eslint-config-prettier": "^8.3.0",
@@ -61,18 +63,28 @@
     "stylelint-scss": "^3.20.1"
   },
   "lint-staged": {
-    "**/*.+(js|jsx|ts|tsx)": [
+    "**/*.{js,jsx,ts,tsx}": [
       "eslint --fix",
       "prettier --write --ignore-unknown"
     ],
-    "**/*.+(ts|tsx|js|jsx|json|css|scss|md|mdx|html)": [
+    "**/*.{ts,tsx,js,jsx,css,scss,md,mdx,html}": [
       "stylelint --fix",
-      "prettier --write"
+      "prettier --write --ignore-unknown"
     ]
   },
   "commitlint": {
     "extends": [
       "@commitlint/config-conventional"
     ]
-  }
+  },
+  "crcf": [
+    "scss",
+    "cssmodules",
+    "uppercase",
+    "namedexports",
+    "functional",
+    {
+      "output": "src"
+    }
+  ]
 }
