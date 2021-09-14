@@ -1,0 +1,16 @@
+:root {
+  --f-primary: 'Poppins';
+  --f-size: 18px;
+  --c-cyan: hsl(180, 66%, 49%);
+  --c-dark-violet: hsl(257, 27%, 26%);
+  --c-red: hsl(0, 87%, 67%);
+  --c-gray: hsl(0, 0%, 75%);
+  --c-grayish-violet: hsl(257, 7%, 63%);
+  --c-very-dark-blue: hsl(255, 11%, 22%);
+  --c-very-dark-violet: hsl(260, 8%, 14%);
+}
+
+// Breakpoints
+$b-small: 576px;
+$b-medium: 768px;
+$b-xlarge: 1200px;
