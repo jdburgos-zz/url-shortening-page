@@ -19,7 +19,8 @@
 import styles from './{{ name }}.module.scss';
 
 {{#if export }}export {{/if}}const {{ name }}{{#if typescript}}: React.FC<
-{{~#if proptypes~}} {{ name ~}} Props {{~else~}} any {{~/if}}> {{~/if}} = () => <div>{{name}}</div>;
+{{~#if proptypes~}} {{ name ~}} Props {{~else~}} any {{~/if}}> {{~/if}} = () =>
+<div className={styles}>{{name}}</div>;
 
 {{#if proptypes~}}
   {{ name }}.propTypes = {
