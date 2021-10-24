@@ -1,7 +1,8 @@
 /** React core **/
 import React from 'react';
 
-/** Styles **/
-import styles from './Button.module.scss';
-
-export const Button = () => <div>Button</div>;
+export const Button = props => (
+  <button className="btn" type={props.type}>
+    {props.children}
+  </button>
+);

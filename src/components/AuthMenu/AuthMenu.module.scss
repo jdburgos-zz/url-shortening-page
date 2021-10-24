@@ -1,3 +1,30 @@
 .auth-menu {
-  display: block;
+  &__container {
+    align-items: center;
+    border-top: 1px solid var(--c-grayish-violet);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  &__item {
+    color: var(--c-gray);
+    padding: 10px 0;
+    text-align: center;
+    text-decoration: white;
+    transition: color 0.3s, transform 0.3s;
+    width: 100%;
+
+    &:hover {
+      color: var(--c-grayish-violet);
+      transform: scale(1.05);
+    }
+  }
+
+  &__btn {
+    color: var(--c-white);
+    display: inline-block;
+    text-decoration: none;
+    width: 100%;
+  }
 }

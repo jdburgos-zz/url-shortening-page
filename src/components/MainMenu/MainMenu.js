@@ -4,6 +4,9 @@ import React, { useState } from 'react';
 /** Dependencies **/
 import { Link } from 'react-router-dom';
 
+/** Components **/
+import { AuthMenu } from '../AuthMenu';
+
 /** Styles **/
 import styles from './MainMenu.module.scss';
 
@@ -14,15 +17,16 @@ export const MainMenu = () => {
   };
   const menu = (
     <div className={styles['main-menu__container']}>
-      <Link to="/features" className={styles['header__logo']}>
+      <Link to="/features" className={styles['main-menu__item']}>
         Features
       </Link>
-      <Link to="/pricing" className={styles['header__logo']}>
+      <Link to="/pricing" className={styles['main-menu__item']}>
         Pricing
       </Link>
-      <Link to="/resources" className={styles['header__logo']}>
+      <Link to="/resources" className={styles['main-menu__item']}>
         Resources
       </Link>
+      <AuthMenu />
     </div>
   );
 

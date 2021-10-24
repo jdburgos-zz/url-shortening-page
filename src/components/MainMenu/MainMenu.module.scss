@@ -4,4 +4,32 @@
     cursor: pointer;
     font-size: 2rem;
   }
+
+  &__container {
+    align-items: center;
+    background-color: var(--c-dark-violet);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    left: 0;
+    margin: 20px auto 0;
+    max-width: 370px;
+    padding: 20px;
+    position: absolute;
+    right: 0;
+  }
+
+  &__item {
+    color: var(--c-gray);
+    padding: 15px 0;
+    text-align: center;
+    text-decoration: none;
+    transition: color 0.3s, transform 0.3s;
+    width: 100%;
+
+    &:hover {
+      color: var(--c-grayish-violet);
+      transform: scale(1.05);
+    }
+  }
 }

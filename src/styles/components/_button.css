@@ -1,0 +1,9 @@
+.btn {
+  background-color: var(--c-cyan);
+  border-radius: 30px;
+  color: var(--c-white);
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  width: calc(100% - 40px);
+}
