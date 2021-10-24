@@ -13,6 +13,6 @@ export const AuthMenu = () => (
     <Link to="/auth/login" className={styles['auth-menu__item']}>
       Login
     </Link>
-    <ButtonLink to="/auth/signup">Signup</ButtonLink>
+    <ButtonLink to="/auth/signup">Sign Up</ButtonLink>
   </div>
 );

@@ -12,13 +12,7 @@
     padding: 10px 0;
     text-align: center;
     text-decoration: white;
-    transition: color 0.3s, transform 0.3s;
     width: 100%;
-
-    &:hover {
-      color: var(--c-grayish-violet);
-      transform: scale(1.05);
-    }
   }
 
   &__btn {
