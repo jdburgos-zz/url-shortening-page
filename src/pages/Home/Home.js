@@ -21,7 +21,9 @@ export const Home = () => (
       <p className={styles['get-started__description']}>
         Build your brand’s recognition and get detailed insights on how your links are performing.
       </p>
-      <ButtonLink to="/features">Get Started</ButtonLink>
+      <ButtonLink to="/features" className={styles['get-started__btn']}>
+        Get Started
+      </ButtonLink>
     </div>
     <div>
       <h3>Advanced Statistics</h3>

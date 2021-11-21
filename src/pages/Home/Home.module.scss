@@ -6,3 +6,22 @@
     right: -27%;
   }
 }
+
+.get-started {
+  margin: 0 auto;
+  max-width: 90%;
+  text-align: center;
+
+  &__title {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+
+  &__description {
+    color: var(--c-grayish-violet);
+  }
+
+  &__btn {
+    min-width: 220px;
+  }
+}

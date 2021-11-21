@@ -4,9 +4,9 @@
   border-radius: 30px;
   color: var(--c-white);
   cursor: pointer;
+  display: inline-block;
   font-weight: 700;
   padding: 20px;
   text-align: center;
   text-decoration: none;
-  width: calc(100% - 40px);
 }

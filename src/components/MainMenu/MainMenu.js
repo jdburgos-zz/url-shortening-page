@@ -17,16 +17,16 @@ export const MainMenu = () => {
   };
   const menu = (
     <div className={styles['main-menu__container']}>
-      <Link to="/features" className={styles['main-menu__item']}>
+      <Link to="/features" className={styles['main-menu__item']} onClick={handleMenu}>
         Features
       </Link>
-      <Link to="/pricing" className={styles['main-menu__item']}>
+      <Link to="/pricing" className={styles['main-menu__item']} onClick={handleMenu}>
         Pricing
       </Link>
-      <Link to="/resources" className={styles['main-menu__item']}>
+      <Link to="/resources" className={styles['main-menu__item']} onClick={handleMenu}>
         Resources
       </Link>
-      <AuthMenu />
+      <AuthMenu onClick={handleMenu} />
     </div>
   );
 
