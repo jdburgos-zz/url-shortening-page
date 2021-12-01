@@ -26,12 +26,14 @@ export const Home = () => (
       </ButtonLink>
     </div>
     <ShortenForm />
-    <div className={styles['advanced-statistics']}>
-      <h3 className={styles['advanced-statistics__title']}>Advanced Statistics</h3>
-      <p className={styles['advanced-statistics__description']}>
-        Track how your links are performing across the web with our advanced statistics dashboard.
-      </p>
+    <div className={styles['secondary-content']}>
+      <div className={styles['advanced-statistics']}>
+        <h3 className={styles['advanced-statistics__title']}>Advanced Statistics</h3>
+        <p className={styles['advanced-statistics__description']}>
+          Track how your links are performing across the web with our advanced statistics dashboard.
+        </p>
+      </div>
+      <FeaturesList />
     </div>
-    <FeaturesList />
   </div>
 );

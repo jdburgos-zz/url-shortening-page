@@ -19,11 +19,18 @@
 
   &__description {
     color: var(--c-grayish-violet);
+    line-height: 1.8;
   }
 
   &__btn {
     min-width: 220px;
   }
+}
+
+.secondary-content {
+  background-color: var(--c-gray-violet);
+  margin-top: -162px;
+  padding: 205px 0 40px;
 }
 
 .advanced-statistics {
@@ -38,5 +45,7 @@
 
   &__description {
     color: var(--c-grayish-violet);
+    font-size: 1.2em;
+    line-height: 1.8;
   }
 }

@@ -1,3 +1,63 @@
 .features-list {
-  display: block;
+  margin: 0 auto 60px;
+  max-width: 90%;
+  padding-top: 75px;
+
+  &__card {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding-top: 95px;
+    position: relative;
+
+    &:not(&:first-child) {
+      &::before {
+        background-color: var(--c-cyan);
+        content: '';
+        display: block;
+        height: 90px;
+        left: 0;
+        margin: 0 auto;
+        position: absolute;
+        right: 0;
+        top: -150px;
+        width: 15px;
+      }
+    }
+
+    &:not(&:last-child) {
+      margin-bottom: 150px;
+    }
+  }
+
+  &__img {
+    max-width: 45%;
+
+    &-container {
+      align-items: center;
+      background-color: var(--c-dark-violet);
+      border-radius: 50%;
+      display: flex;
+      height: 150px;
+      justify-content: center;
+      left: 0;
+      margin: 0 auto;
+      position: absolute;
+      right: 0;
+      top: -75px;
+      width: 150px;
+    }
+  }
+
+  &__title {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+  }
+
+  &__description {
+    color: var(--c-grayish-violet);
+    line-height: 1.8;
+    margin: 0;
+    text-align: center;
+  }
 }

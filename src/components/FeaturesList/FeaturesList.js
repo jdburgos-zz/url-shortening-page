@@ -12,27 +12,29 @@ const FEATURES = [
     title: 'Brand Recognition',
     description:
       'Boost your brand recognition with each click. Generic links don’t mean a thing. Branded links help instil confidence in your content.',
-    img: '',
+    img: `${process.env.PUBLIC_URL}/images/icon-brand-recognition.svg`,
   },
   {
     title: 'Detailed Records',
     description:
       'Gain insights into who is clicking your links. Knowing when and where people engage with your content helps inform better decisions.',
-    img: '',
+    img: `${process.env.PUBLIC_URL}/images/icon-detailed-records.svg`,
   },
   {
     title: 'Fully Customizable',
     description:
       'Improve brand awareness and content discoverability through customizable links, supercharging audience engagement.',
-    img: '',
+    img: `${process.env.PUBLIC_URL}/images/icon-fully-customizable.svg`,
   },
 ];
 
 const content = FEATURES.map(({ title, description, img }, index) => (
-  <Card key={index}>
-    <img src="" alt="" />
-    <h4>{title}</h4>
-    <p>{description}</p>
+  <Card key={index} className={styles['features-list__card']}>
+    <div className={styles['features-list__img-container']}>
+      <img className={styles['features-list__img']} src={img} alt={title} />
+    </div>
+    <h4 className={styles['features-list__title']}>{title}</h4>
+    <p className={styles['features-list__description']}>{description}</p>
   </Card>
 ));
 

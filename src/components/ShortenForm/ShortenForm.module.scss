@@ -9,6 +9,8 @@
   margin: 0 auto 60px;
   max-width: calc(90% - 60px);
   padding: 30px;
+  position: relative;
+  z-index: 5;
 
   &__input {
     margin-bottom: 30px;
