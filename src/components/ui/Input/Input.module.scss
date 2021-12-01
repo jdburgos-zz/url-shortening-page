@@ -1,3 +1,10 @@
 .input {
-  display: block;
+  border: none;
+  border-radius: 7px;
+  color: var(--c-gray);
+  padding: 15px;
+
+  &::placeholder {
+    color: var(--c-gray);
+  }
 }

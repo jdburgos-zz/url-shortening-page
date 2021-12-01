@@ -25,13 +25,13 @@ export const Home = () => (
         Get Started
       </ButtonLink>
     </div>
-    <div>
-      <h3>Advanced Statistics</h3>
-      <p>
+    <ShortenForm />
+    <div className={styles['advanced-statistics']}>
+      <h3 className={styles['advanced-statistics__title']}>Advanced Statistics</h3>
+      <p className={styles['advanced-statistics__description']}>
         Track how your links are performing across the web with our advanced statistics dashboard.
       </p>
     </div>
-    <ShortenForm />
     <FeaturesList />
   </div>
 );

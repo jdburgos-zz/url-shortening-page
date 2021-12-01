@@ -5,5 +5,8 @@ import React from 'react';
 import styles from './Input.module.scss';
 
 export const Input = props => {
-  return <input onChange={props.onChange} className={`${styles.input}`} {...props.input} />;
+  const customClasses = props.className ? props.className : '';
+  const classes = `${styles.input} ${customClasses}`.trim();
+
+  return <input onChange={props.onChange} className={classes} {...props.input} />;
 };
