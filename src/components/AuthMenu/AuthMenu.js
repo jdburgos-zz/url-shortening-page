@@ -13,7 +13,7 @@ export const AuthMenu = props => (
     <Link to="/auth/login" className={styles['auth-menu__item']} onClick={props.onClick}>
       Login
     </Link>
-    <ButtonLink to="/auth/signup" onClick={props.onClick}>
+    <ButtonLink to="/auth/signup" className={styles['auth-menu__btn']} onClick={props.onClick}>
       Sign Up
     </ButtonLink>
   </div>
