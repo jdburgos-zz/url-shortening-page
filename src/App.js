@@ -1,5 +1,5 @@
 /** Dependencies **/
-import { Route, Switch } from 'react-router-dom';
+import { Redirect, Route, Switch } from 'react-router-dom';
 
 /** Styles **/
 import './styles/styles.scss';
@@ -19,8 +19,11 @@ import { Auth } from './pages/Auth';
 const App = () => (
   <MainContainer>
     <Switch>
-      <Route path="/" exact>
+      <Route path="/url-shortening-page" exact>
         <Home />
+      </Route>
+      <Route path="/" exact>
+        <Redirect to="/url-shortening-page" />
       </Route>
       <Route path="/features">
         <Features />
