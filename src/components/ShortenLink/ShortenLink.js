@@ -10,9 +10,10 @@ import styles from './ShortenLink.module.scss';
 export const ShortenLink = ({ link }) => {
   const [text, setText] = useState('Copy');
   const [variant, setVariant] = useState('primary');
+  const { url, shortenLink } = link;
 
   const handleClick = () => {
-    navigator.clipboard.writeText(link.shortenLink);
+    navigator.clipboard.writeText(shortenLink);
     setText('Copied!');
     setVariant('secondary');
   };
@@ -20,24 +21,19 @@ export const ShortenLink = ({ link }) => {
   return (
     <Card className={styles['shorten-link']}>
       <div className={styles['shorten-link__header']}>
-        <a
-          href={link.url}
-          target="_blank"
-          rel="noreferrer"
-          className={styles['shorten-link__link']}
-        >
-          {link.url}
+        <a href={url} target="_blank" rel="noreferrer" className={styles['shorten-link__link']}>
+          {url}
         </a>
       </div>
       <div className={styles['shorten-link__content']}>
         <span className={styles['shorten-link__text']}>
           <a
-            href={link.shortenLink}
+            href={shortenLink}
             target="_blank"
             rel="noreferrer"
             className={styles['shorten-link__link']}
           >
-            {link.shortenLink}
+            {shortenLink}
           </a>
         </span>
         <Button

@@ -13,6 +13,18 @@
   z-index: 5;
 
   &__input {
+    border: 3px solid transparent;
     margin-bottom: 30px;
+
+    &-error {
+      border: 3px solid var(--c-red);
+      margin-bottom: 0;
+    }
+
+    &-text {
+      color: var(--c-red);
+      font-style: italic;
+      margin: 5px 0 30px;
+    }
   }
 }
