@@ -9,15 +9,17 @@ import styles from './LinksList.module.scss';
 
 export const LinksList = props => {
   const links = props.list.links.map((link, index) => (
-    <li key={index}>
-      <Link to={link.url}>{link.title}</Link>
+    <li key={index} className={styles['links-list__item']}>
+      <Link to={link.url} className={styles['links-list__link']}>
+        {link.title}
+      </Link>
     </li>
   ));
 
   return (
-    <div className={styles}>
-      <h4>{props.list.title}</h4>
-      <ul>{links}</ul>
+    <div className={styles['links-list']}>
+      <h4 className={styles['links-list__title']}>{props.list.title}</h4>
+      <ul className={styles['links-list__items']}>{links}</ul>
     </div>
   );
 };

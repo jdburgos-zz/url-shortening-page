@@ -7,10 +7,10 @@ import { Link } from 'react-router-dom';
 /** Components **/
 import { FooterLinks } from '../../FooterLinks';
 import { SocialLinks } from '../../SocialLinks';
+import { ButtonLink } from '../../ui/ButtonLink';
 
 /** Styles **/
 import styles from './Footer.module.scss';
-import { ButtonLink } from '../../ui/ButtonLink';
 
 export const Footer = () => (
   <div className={styles.footer}>

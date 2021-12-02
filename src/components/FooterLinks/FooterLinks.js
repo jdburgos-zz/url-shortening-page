@@ -1,9 +1,11 @@
 /** React core **/
 import React from 'react';
 
+/** Components **/
+import { LinksList } from '../LinksList';
+
 /** Styles **/
 import styles from './FooterLinks.module.scss';
-import { LinksList } from '../LinksList';
 
 const LINKS_LIST = [
   {
@@ -65,4 +67,4 @@ const LINKS_LIST = [
 
 const content = LINKS_LIST.map((list, index) => <LinksList key={index} list={list} />);
 
-export const FooterLinks = () => <div className={styles}>{content}</div>;
+export const FooterLinks = () => <div className={styles['footer-links']}>{content}</div>;
