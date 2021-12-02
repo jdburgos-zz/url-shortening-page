@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/url-shortening-page/static/css/main.b2ebafdb.chunk.css",
+    "main.css": "/url-shortening-page/static/css/main.e57212ba.chunk.css",
     "main.js": "/url-shortening-page/static/js/main.1bb68faf.chunk.js",
     "main.js.map": "/url-shortening-page/static/js/main.1bb68faf.chunk.js.map",
     "runtime-main.js": "/url-shortening-page/static/js/runtime-main.3c323179.js",
@@ -10,13 +10,13 @@
     "static/js/3.5d67c797.chunk.js": "/url-shortening-page/static/js/3.5d67c797.chunk.js",
     "static/js/3.5d67c797.chunk.js.map": "/url-shortening-page/static/js/3.5d67c797.chunk.js.map",
     "index.html": "/url-shortening-page/index.html",
-    "static/css/main.b2ebafdb.chunk.css.map": "/url-shortening-page/static/css/main.b2ebafdb.chunk.css.map",
+    "static/css/main.e57212ba.chunk.css.map": "/url-shortening-page/static/css/main.e57212ba.chunk.css.map",
     "static/js/2.eeca9f53.chunk.js.LICENSE.txt": "/url-shortening-page/static/js/2.eeca9f53.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.3c323179.js",
     "static/js/2.eeca9f53.chunk.js",
-    "static/css/main.b2ebafdb.chunk.css",
+    "static/css/main.e57212ba.chunk.css",
     "static/js/main.1bb68faf.chunk.js"
   ]
 }
