@@ -19,6 +19,6 @@ export const ShortenForm = () => (
         placeholder: 'Shorten a link here...',
       }}
     />
-    <Button type="semiRectangle">Shorten It!</Button>
+    <Button type="semi-rectangle">Shorten It!</Button>
   </div>
 );

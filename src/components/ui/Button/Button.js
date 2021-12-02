@@ -6,12 +6,13 @@ import styles from './Button.module.scss';
 
 export const Button = props => {
   const defaultClass = 'btn';
-  const className = props.type ? `${styles['semi-rectangle']}` : '';
+  const typeClass = props.type === 'semi-rectangle' ? `${styles['semi-rectangle']}` : '';
   const customClasses = props.className ? props.className : '';
-  const classes = `${defaultClass} ${className} ${customClasses}`.trim();
+  const variantClass = props.variant ? `${styles[props.variant]}` : '';
+  const classes = `${defaultClass} ${variantClass} ${typeClass} ${customClasses}`.trim();
 
   return (
-    <button className={classes} type={props.type}>
+    <button className={classes} type={props.type} onClick={props.onClick}>
       {props.children}
     </button>
   );

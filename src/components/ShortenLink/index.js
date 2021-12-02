@@ -1,0 +1,1 @@
+export { ShortenLink } from './ShortenLink';
