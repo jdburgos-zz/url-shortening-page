@@ -25,10 +25,9 @@
     background-color: var(--c-very-dark-blue);
     display: flex;
     flex-direction: column;
-    padding: 55px 25px 25px;
+    padding: 55px 25px;
 
     &-logo {
-      display: block;
       line-height: 0;
       margin-bottom: 60px;
       min-width: 155px;

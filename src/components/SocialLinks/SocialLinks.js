@@ -28,9 +28,9 @@ const SOCIAL_LINKS = [
 ];
 
 const links = SOCIAL_LINKS.map((link, index) => (
-  <a key={index} href={link.url} target="_blank" rel="noreferrer">
+  <a key={index} href={link.url} target="_blank" rel="noreferrer" className={styles['social-link']}>
     <img src={`${process.env.PUBLIC_URL}/images/${link.img}`} alt={link.name} title={link.name} />
   </a>
 ));
 
-export const SocialLinks = () => <div className={styles}>{links}</div>;
+export const SocialLinks = () => <div className={styles['social-links']}>{links}</div>;

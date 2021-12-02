@@ -1,3 +1,11 @@
 .social-links {
-  display: block;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  min-width: 240px;
+}
+
+.social-link {
+  line-height: 0;
+  min-width: 30px;
 }
