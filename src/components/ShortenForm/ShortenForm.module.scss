@@ -19,6 +19,22 @@
     &-error {
       border: 3px solid var(--c-red);
       margin-bottom: 0;
+
+      &::-webkit-input-placeholder {
+        color: var(--c-red);
+      }
+
+      &::-moz-placeholder {
+        color: var(--c-red);
+      }
+
+      &:-ms-input-placeholder {
+        color: var(--c-red);
+      }
+
+      &:-moz-placeholder {
+        color: var(--c-red);
+      }
     }
 
     &-text {
