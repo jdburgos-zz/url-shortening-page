@@ -1,9 +1,15 @@
 /** React core **/
 import React, { useRef, useState } from 'react';
 
+/** Dependencies **/
+import { useDispatch } from 'react-redux';
+
 /** Components **/
 import { Button, Input } from '../ui';
 import { Loader } from '../Loader';
+
+/** Actions **/
+import { shortenLinksActions } from '../../store/shorten-links/shorten-links.reducer';
 
 /** Styles **/
 import styles from './ShortenForm.module.scss';
@@ -13,6 +19,7 @@ export const ShortenForm = () => {
   const [error, setError] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
   const [errorText, setErrorText] = useState('');
+  const dispatch = useDispatch();
 
   const api = async link => {
     try {
@@ -30,11 +37,13 @@ export const ShortenForm = () => {
 
       if (!links) {
         localStorage.setItem('shortenLinks', JSON.stringify([newLink]));
+        dispatch(shortenLinksActions.setLinks([newLink]));
       } else {
         const items = JSON.parse(links);
 
         items.push(newLink);
         localStorage.setItem('shortenLinks', JSON.stringify(items));
+        dispatch(shortenLinksActions.setLinks(items));
       }
     } catch (e) {
       setError(true);
@@ -68,21 +77,19 @@ export const ShortenForm = () => {
   const classes = `${styles['shorten-form__input']} ${errorClass}`.trim();
   const errorElement = <span className={styles['shorten-form__input-text']}>{errorText}</span>;
   const btnContent = isLoading ? <Loader /> : 'Shorten It!';
+  const inputAttrs = {
+    ref: inputRef,
+    placeholder: 'Shorten a link here...',
+    type: 'url',
+    onKeyUp: handleKeyUp,
+  };
 
   return (
     <div
       className={styles['shorten-form']}
       style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/images/bg-shorten-mobile.svg)` }}
     >
-      <Input
-        className={classes}
-        input={{
-          ref: inputRef,
-          placeholder: 'Shorten a link here...',
-          type: 'url',
-          onKeyUp: handleKeyUp,
-        }}
-      />
+      <Input className={classes} input={inputAttrs} />
       {error && errorElement}
       <Button type="semi-rectangle" disabled={isLoading} onClick={handleClick}>
         {btnContent}
