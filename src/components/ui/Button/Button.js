@@ -4,16 +4,16 @@ import React from 'react';
 /** Styles **/
 import styles from './Button.module.scss';
 
-export const Button = props => {
+export const Button = ({ type, className, variant, onClick, disabled, children }) => {
   const defaultClass = 'btn';
-  const typeClass = props.type === 'semi-rectangle' ? `${styles['semi-rectangle']}` : '';
-  const customClasses = props.className ? props.className : '';
-  const variantClass = props.variant ? `${styles[props.variant]}` : '';
+  const typeClass = type === 'semi-rectangle' ? `${styles['semi-rectangle']}` : '';
+  const customClasses = className ? className : '';
+  const variantClass = variant ? `${styles[variant]}` : '';
   const classes = `${defaultClass} ${variantClass} ${typeClass} ${customClasses}`.trim();
 
   return (
-    <button className={classes} type={props.type} onClick={props.onClick}>
-      {props.children}
+    <button className={classes} type={type} onClick={onClick} disabled={disabled}>
+      {children}
     </button>
   );
 };

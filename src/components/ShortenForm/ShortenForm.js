@@ -3,6 +3,7 @@ import React, { useRef, useState } from 'react';
 
 /** Components **/
 import { Button, Input } from '../ui';
+import { Loader } from '../Loader';
 
 /** Styles **/
 import styles from './ShortenForm.module.scss';
@@ -10,12 +11,18 @@ import styles from './ShortenForm.module.scss';
 export const ShortenForm = () => {
   const inputRef = useRef();
   const [error, setError] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
   const [errorText, setErrorText] = useState('');
 
   const api = async link => {
     try {
+      setIsLoading(true);
+
       const response = await fetch(`https://api.shrtco.de/v2/shorten?url=${link}`);
       const data = await response.json();
+
+      setIsLoading(false);
+
       const { result } = data;
       const { original_link, full_short_link } = result;
       const newLink = { url: original_link, shortenLink: full_short_link };
@@ -60,6 +67,7 @@ export const ShortenForm = () => {
   const errorClass = error ? `${styles['shorten-form__input-error']}` : '';
   const classes = `${styles['shorten-form__input']} ${errorClass}`.trim();
   const errorElement = <span className={styles['shorten-form__input-text']}>{errorText}</span>;
+  const btnContent = isLoading ? <Loader /> : 'Shorten It!';
 
   return (
     <div
@@ -76,8 +84,8 @@ export const ShortenForm = () => {
         }}
       />
       {error && errorElement}
-      <Button type="semi-rectangle" onClick={handleClick}>
-        Shorten It!
+      <Button type="semi-rectangle" disabled={isLoading} onClick={handleClick}>
+        {btnContent}
       </Button>
     </div>
   );

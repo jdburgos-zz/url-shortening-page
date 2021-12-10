@@ -21,20 +21,11 @@ export const ShortenLink = ({ link }) => {
   return (
     <Card className={styles['shorten-link']}>
       <div className={styles['shorten-link__header']}>
-        <a href={url} target="_blank" rel="noreferrer" className={styles['shorten-link__link']}>
-          {url}
-        </a>
+        <span className={styles['shorten-link__link']}>{url}</span>
       </div>
       <div className={styles['shorten-link__content']}>
         <span className={styles['shorten-link__text']}>
-          <a
-            href={shortenLink}
-            target="_blank"
-            rel="noreferrer"
-            className={styles['shorten-link__link']}
-          >
-            {shortenLink}
-          </a>
+          <span className={styles['shorten-link__link']}>{shortenLink}</span>
         </span>
         <Button
           type="semi-rectangle"
