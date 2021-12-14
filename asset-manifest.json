@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/url-shortening-page/static/css/main.ee329bf5.chunk.css",
-    "main.js": "/url-shortening-page/static/js/main.3f72d3a3.chunk.js",
-    "main.js.map": "/url-shortening-page/static/js/main.3f72d3a3.chunk.js.map",
-    "runtime-main.js": "/url-shortening-page/static/js/runtime-main.1aa2c9fc.js",
-    "runtime-main.js.map": "/url-shortening-page/static/js/runtime-main.1aa2c9fc.js.map",
-    "static/js/2.a0df0037.chunk.js": "/url-shortening-page/static/js/2.a0df0037.chunk.js",
-    "static/js/2.a0df0037.chunk.js.map": "/url-shortening-page/static/js/2.a0df0037.chunk.js.map",
-    "static/js/3.038f2e51.chunk.js": "/url-shortening-page/static/js/3.038f2e51.chunk.js",
-    "static/js/3.038f2e51.chunk.js.map": "/url-shortening-page/static/js/3.038f2e51.chunk.js.map",
+    "main.css": "/url-shortening-page/static/css/main.a532a571.chunk.css",
+    "main.js": "/url-shortening-page/static/js/main.23bc7069.chunk.js",
+    "main.js.map": "/url-shortening-page/static/js/main.23bc7069.chunk.js.map",
+    "runtime-main.js": "/url-shortening-page/static/js/runtime-main.156bdeff.js",
+    "runtime-main.js.map": "/url-shortening-page/static/js/runtime-main.156bdeff.js.map",
+    "static/js/2.93b75021.chunk.js": "/url-shortening-page/static/js/2.93b75021.chunk.js",
+    "static/js/2.93b75021.chunk.js.map": "/url-shortening-page/static/js/2.93b75021.chunk.js.map",
+    "static/js/3.2cb1fe52.chunk.js": "/url-shortening-page/static/js/3.2cb1fe52.chunk.js",
+    "static/js/3.2cb1fe52.chunk.js.map": "/url-shortening-page/static/js/3.2cb1fe52.chunk.js.map",
     "index.html": "/url-shortening-page/index.html",
-    "static/css/main.ee329bf5.chunk.css.map": "/url-shortening-page/static/css/main.ee329bf5.chunk.css.map",
-    "static/js/2.a0df0037.chunk.js.LICENSE.txt": "/url-shortening-page/static/js/2.a0df0037.chunk.js.LICENSE.txt"
+    "static/css/main.a532a571.chunk.css.map": "/url-shortening-page/static/css/main.a532a571.chunk.css.map",
+    "static/js/2.93b75021.chunk.js.LICENSE.txt": "/url-shortening-page/static/js/2.93b75021.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.1aa2c9fc.js",
-    "static/js/2.a0df0037.chunk.js",
-    "static/css/main.ee329bf5.chunk.css",
-    "static/js/main.3f72d3a3.chunk.js"
+    "static/js/runtime-main.156bdeff.js",
+    "static/js/2.93b75021.chunk.js",
+    "static/css/main.a532a571.chunk.css",
+    "static/js/main.23bc7069.chunk.js"
   ]
 }
