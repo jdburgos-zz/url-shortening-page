@@ -4,7 +4,7 @@ import React from 'react';
 /** Styles **/
 import styles from './Resources.module.scss';
 
-export const Resources = () => {
+export default function Resources() {
   return (
     <div className={styles.resources}>
       <img
@@ -18,4 +18,4 @@ export const Resources = () => {
       </p>
     </div>
   );
-};
+}

@@ -1,33 +1,47 @@
 /** React core **/
-import React, { Fragment } from 'react';
+import { Fragment, lazy, Suspense } from 'react';
 
 /** Dependencies **/
-import { Redirect, Route, Switch, useRouteMatch } from 'react-router-dom';
+import { Navigate, Route, Routes } from 'react-router-dom';
 
 /** Components **/
-import { Login } from '../Login';
-import { SignUp } from '../SignUp';
-import { NotFound } from '../NotFound';
+import { SuspenseComponent } from '../../helpers/SuspenseComponent';
 
-export const Auth = () => {
-  const match = useRouteMatch();
+/** Pages **/
+const Login = lazy(() => import('../Login/Login'));
+const SignUp = lazy(() => import('../SignUp/SignUp'));
+const NotFound = lazy(() => import('../NotFound/NotFound'));
 
+export default function Auth() {
   return (
     <Fragment>
-      <Switch>
-        <Route path={match.path} exact>
-          <Redirect to={`${match.path}/login`} />
-        </Route>
-        <Route path={`${match.path}/login`}>
-          <Login />
-        </Route>
-        <Route path={`${match.path}/signup`}>
-          <SignUp />
-        </Route>
-        <Route path="*">
-          <NotFound />
-        </Route>
-      </Switch>
+      <Routes>
+        <Route path="/" element={<Navigate to="login" />} />
+        <Route
+          path="login"
+          element={
+            <Suspense fallback={<SuspenseComponent />}>
+              <Login />
+            </Suspense>
+          }
+        />
+        <Route
+          path="signup"
+          element={
+            <Suspense fallback={<SuspenseComponent />}>
+              <SignUp />
+            </Suspense>
+          }
+        />
+        <Route
+          path="*"
+          element={
+            <Suspense fallback={<SuspenseComponent />}>
+              <NotFound />
+            </Suspense>
+          }
+        />
+      </Routes>
     </Fragment>
   );
-};
+}

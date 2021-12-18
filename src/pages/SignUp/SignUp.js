@@ -13,7 +13,7 @@ import styles from './SignUp.module.scss';
 /** Config **/
 import { auth } from '../../config/firebase';
 
-export const SignUp = () => {
+export default function SignUp() {
   const handleSubmit = async (email, password) => {
     try {
       const response = await createUserWithEmailAndPassword(
@@ -32,4 +32,4 @@ export const SignUp = () => {
       <AuthForm title="Signup" btnText="Signup" submit={handleSubmit} />
     </div>
   );
-};
+}

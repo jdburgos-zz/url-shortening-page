@@ -1,6 +1,6 @@
 /** React core **/
 import React from 'react';
-import { useHistory } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 /** Dependencies **/
 import { signInWithEmailAndPassword } from 'firebase/auth';
@@ -14,8 +14,8 @@ import styles from './Login.module.scss';
 /** Config **/
 import { auth } from '../../config/firebase';
 
-export const Login = () => {
-  const history = useHistory();
+export default function Login() {
+  const navigate = useNavigate();
 
   const handleSubmit = async (email, password) => {
     try {
@@ -33,7 +33,7 @@ export const Login = () => {
 
       localStorage.setItem('authToken', accessToken);
       console.log('user logged', userEmail);
-      history.push('/admin');
+      navigate('/admin');
     } catch (e) {
       console.log(e);
     }
@@ -44,4 +44,4 @@ export const Login = () => {
       <AuthForm title="Login" btnText="Login" submit={handleSubmit} />
     </div>
   );
-};
+}

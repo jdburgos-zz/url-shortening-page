@@ -4,7 +4,7 @@ import React from 'react';
 /** Styles **/
 import styles from './Features.module.scss';
 
-export const Features = () => {
+export default function Features() {
   return (
     <div className={styles.features}>
       <img
@@ -18,4 +18,4 @@ export const Features = () => {
       </p>
     </div>
   );
-};
+}

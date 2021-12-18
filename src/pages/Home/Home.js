@@ -16,7 +16,7 @@ import { shortenLinksActions } from '../../store/shorten-links/shorten-links.red
 /** Styles **/
 import styles from './Home.module.scss';
 
-export const Home = () => {
+export default function Home() {
   const dispatch = useDispatch();
   const [hasLinks, setHasLinks] = useState(false);
   const links = useSelector(state => state.shortenLinks.links);
@@ -62,4 +62,4 @@ export const Home = () => {
       </div>
     </div>
   );
-};
+}

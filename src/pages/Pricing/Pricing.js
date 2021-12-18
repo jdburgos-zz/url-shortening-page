@@ -4,7 +4,7 @@ import React from 'react';
 /** Styles **/
 import styles from './Pricing.module.scss';
 
-export const Pricing = () => {
+export default function Pricing() {
   return (
     <div className={styles.pricing}>
       <img
@@ -18,4 +18,4 @@ export const Pricing = () => {
       </p>
     </div>
   );
-};
+}
