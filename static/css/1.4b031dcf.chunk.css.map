@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack://src/pages/NotFound/NotFound.module.scss"],"names":[],"mappings":"AAAA,2BACE,aAAc","file":"1.4b031dcf.chunk.css","sourcesContent":[".not-found {\n  display: block;\n}\n"]}
