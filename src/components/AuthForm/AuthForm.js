@@ -3,11 +3,12 @@ import React, { useRef } from 'react';
 
 /** Components **/
 import { Button, Input } from '../ui';
+import { Loader } from '../Loader';
 
 /** Styles **/
 import styles from './AuthForm.module.scss';
 
-export const AuthForm = ({ title, btnText, submit }) => {
+export const AuthForm = ({ title, btnText, submit, isLoading }) => {
   const inputUserRef = useRef();
   const inputPasswordRef = useRef();
 
@@ -22,6 +23,8 @@ export const AuthForm = ({ title, btnText, submit }) => {
     type: 'password',
   };
 
+  const btnContent = isLoading ? <Loader /> : btnText;
+
   return (
     <div className={styles['auth-form']}>
       <h2 className={styles['auth-form__title']}>{title}</h2>
@@ -33,7 +36,7 @@ export const AuthForm = ({ title, btnText, submit }) => {
           type="semi-rectangle"
           onClick={submit.bind(null, inputUserRef, inputPasswordRef)}
         >
-          {btnText}
+          {btnContent}
         </Button>
       </div>
     </div>
