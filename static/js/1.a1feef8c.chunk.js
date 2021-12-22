@@ -1,2 +1,0 @@
-(this["webpackJsonpurl-shortening-page"]=this["webpackJsonpurl-shortening-page"]||[]).push([[1],{78:function(n,t,o){"use strict";o.r(t),o.d(t,"default",(function(){return s}));o(0);var u=o(79),e=o.n(u),r=o(1);function s(){return Object(r.jsx)("div",{className:e.a["not-found"],children:"NotFound"})}},79:function(n,t,o){n.exports={"not-found":"NotFound_not-found__EyT33"}}}]);
-//# sourceMappingURL=1.a1feef8c.chunk.js.map

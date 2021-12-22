@@ -1,2 +1,0 @@
-(this["webpackJsonpurl-shortening-page"]=this["webpackJsonpurl-shortening-page"]||[]).push([[8],{77:function(n,i,t){n.exports={admin:"Admin_admin__1_QJd"}},89:function(n,i,t){"use strict";t.r(i),t.d(i,"default",(function(){return a}));t(0);var e=t(77),r=t.n(e),s=t(1);function a(){return Object(s.jsx)("div",{className:r.a.admin,children:"Admin"})}}}]);
-//# sourceMappingURL=8.1a467579.chunk.js.map
