@@ -17,7 +17,7 @@ import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <BrowserRouter basename="/url-shortening-page">
+    <BrowserRouter>
       <Provider store={store}>
         <App />
       </Provider>

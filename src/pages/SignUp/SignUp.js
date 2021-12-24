@@ -5,13 +5,13 @@ import React from 'react';
 import { createUserWithEmailAndPassword } from 'firebase/auth';
 
 /** Components **/
-import { AuthForm } from '../../components/AuthForm';
+import { AuthForm } from 'components/AuthForm';
 
 /** Styles **/
 import styles from './SignUp.module.scss';
 
 /** Config **/
-import { auth } from '../../config/firebase';
+import { auth } from 'config/firebase';
 
 export default function SignUp() {
   const handleSubmit = async (email, password) => {

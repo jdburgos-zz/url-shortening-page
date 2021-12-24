@@ -5,7 +5,7 @@ import { Fragment, lazy, Suspense } from 'react';
 import { Navigate, Route, Routes } from 'react-router-dom';
 
 /** Components **/
-import { SuspenseComponent } from '../../helpers/SuspenseComponent';
+import { SuspenseComponent } from 'helpers/SuspenseComponent';
 
 /** Pages **/
 const Login = lazy(() => import('../Login/Login'));

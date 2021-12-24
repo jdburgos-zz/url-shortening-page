@@ -7,16 +7,16 @@ import { useDispatch } from 'react-redux';
 import { signInWithEmailAndPassword } from 'firebase/auth';
 
 /** Components **/
-import { AuthForm } from '../../components/AuthForm';
+import { AuthForm } from 'components/AuthForm';
 
 /** Styles **/
 import styles from './Login.module.scss';
 
 /** Config **/
-import { auth } from '../../config/firebase';
+import { auth } from 'config/firebase';
 
 /** Actions **/
-import { authActions } from '../../store/auth/auth.reducer';
+import { authActions } from 'store/auth/auth.reducer';
 
 export default function Login() {
   const navigate = useNavigate();

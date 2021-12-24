@@ -3,7 +3,7 @@ import React from 'react';
 
 /** Dependencies **/
 import { Link } from 'react-router-dom';
-import { ButtonLink } from '../ui/ButtonLink';
+import { ButtonLink } from '../ui';
 
 /** Styles **/
 import styles from './AuthMenu.module.scss';

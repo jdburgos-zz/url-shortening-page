@@ -5,13 +5,13 @@ import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 
 /** Components **/
-import { ButtonLink } from '../../components/ui';
-import { ShortenForm } from '../../components/ShortenForm';
-import { FeaturesList } from '../../components/FeaturesList';
-import { ShortenLinks } from '../../components/ShortenLinks';
+import { ButtonLink } from 'components/ui';
+import { ShortenForm } from 'components/ShortenForm';
+import { FeaturesList } from 'components/FeaturesList';
+import { ShortenLinks } from 'components/ShortenLinks';
 
 /** Actions **/
-import { shortenLinksActions } from '../../store/shorten-links/shorten-links.reducer';
+import { shortenLinksActions } from 'store/shorten-links/shorten-links.reducer';
 
 /** Styles **/
 import styles from './Home.module.scss';
