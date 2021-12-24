@@ -8,8 +8,8 @@ import { Navigate, Route, Routes } from 'react-router-dom';
 import './styles/styles.scss';
 
 /** Components **/
-import { MainContainer } from './components/layout/MainContainer';
-import { SuspenseComponent } from './helpers/SuspenseComponent';
+import { MainContainer } from 'components/layout/MainContainer';
+import { SuspenseComponent } from 'helpers/SuspenseComponent';
 import { useDispatch, useSelector } from 'react-redux';
 
 /** Actions **/
