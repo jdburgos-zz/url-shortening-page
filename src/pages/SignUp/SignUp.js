@@ -42,8 +42,6 @@ export default function SignUp() {
     } catch (e) {
       setIsLoading(false);
 
-      console.log(e.code);
-
       if (e.code === 'auth/invalid-email') {
         alert('invalid email');
       }
