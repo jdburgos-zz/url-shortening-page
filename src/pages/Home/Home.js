@@ -23,14 +23,12 @@ export default function Home() {
 
   useEffect(() => {
     const checkData = () => {
-      const LINKS = JSON.parse(localStorage.getItem('shortenLinks'));
-
-      setHasLinks(LINKS && !!LINKS.length);
-      dispatch(shortenLinksActions.setLinks(LINKS));
+      setHasLinks(links && !!links.length);
+      dispatch(shortenLinksActions.setLinks(links));
     };
 
     checkData();
-  }, [dispatch]);
+  }, [dispatch, links]);
 
   return (
     <div className={styles.home}>

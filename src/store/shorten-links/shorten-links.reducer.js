@@ -1,7 +1,8 @@
 /** Dependencies **/
 import { createSlice } from '@reduxjs/toolkit';
 
-const initialShortenLinksState = { links: [] };
+const links = JSON.parse(localStorage.getItem('shortenLinks'));
+const initialShortenLinksState = { links };
 
 const shortenLinksSlice = createSlice({
   name: 'shortenLinks',
