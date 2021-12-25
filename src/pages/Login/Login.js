@@ -1,10 +1,10 @@
 /** React core **/
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
-import { useDispatch } from 'react-redux';
 
 /** Dependencies **/
 import { signInWithEmailAndPassword } from 'firebase/auth';
+import { useNavigate } from 'react-router-dom';
+import { useDispatch } from 'react-redux';
 
 /** Components **/
 import { AuthForm } from 'components/AuthForm';
