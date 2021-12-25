@@ -40,6 +40,8 @@ export default function Login() {
       localStorage.setItem('user', JSON.stringify(user));
       navigate('/admin');
     } catch (e) {
+      setIsLoading(false);
+
       if (e.code === 'auth/invalid-email') {
         alert('invalid email');
       }

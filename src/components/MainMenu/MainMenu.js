@@ -23,6 +23,7 @@ export const MainMenu = () => {
   };
 
   const HandleLogout = () => {
+    handleMenu();
     dispatch(authActions.logout(null));
     localStorage.removeItem('user');
     navigate('/');
