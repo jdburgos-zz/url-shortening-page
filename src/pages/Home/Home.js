@@ -40,7 +40,8 @@ export default function Home() {
       <div className={styles['get-started']}>
         <h2 className={styles['get-started__title']}>More than just shorter links</h2>
         <p className={styles['get-started__description']}>
-          Build your brand’s recognition and get detailed insights on how your links are performing.
+          Build test text in app your brand’s recognition and get detailed insights on how your
+          links are performing.
         </p>
         <ButtonLink to="/features" className={styles['get-started__btn']}>
           Get Started
